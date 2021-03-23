@@ -10,6 +10,8 @@ Download or Clone the repo:
 ```
 git pull https://github.com/pierrelh/gotomate-package-template.git
 ```
+or this link:
+https://production-gotomate.herokuapp.com/resources/gotomate-package-template.rar
 
 ## Setup
 
