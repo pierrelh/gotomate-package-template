@@ -7,6 +7,9 @@ You can choose to create your own functions to do whatever you want with a gotom
 ## Installation
 
 Download or Clone the repo:
+```
+git pull https://github.com/pierrelh/gotomate-package-template.git
+```
 
 ## Setup
 
@@ -21,11 +24,13 @@ Then rename the "Package" folder to what your package should be named (don't for
 Currently, on Windows there is now known way (by me) to use plugin, so you have to add some lines to the gotomate's code in order
 to use your package.
 
+### Step 1
 
-1- Copy & Paste your folder into fiber/packages directory
+Copy & Paste your folder into fiber/packages directory
 
+### Step 2
 
-2- Go to fiber/fiber.go & add this:
+Go to fiber/fiber.go & add this:
 ```
 case "YourFolderName":
 	yourPackageName.Processing(funcName, instructionData, finished)
@@ -33,8 +38,9 @@ case "YourFolderName":
 beetween the 105 & 128 lines (at the time I'm writing this), were all the packages are called for the processing.
 Be sure that your package is imported at the top of the file.
 
+### Step 3
 
-3- Go to fiber/packages/packages-dialog.go & add this:
+Go to fiber/packages/packages-dialog.go & add this:
 ```
 case "YourFolderName":
 	yourPackageName.Build(funcName)
