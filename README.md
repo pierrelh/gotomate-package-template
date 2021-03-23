@@ -1,8 +1,8 @@
 # Gotomate Package Template
 
-This is a template of a gotomate's package that you can use to create your own gotomate's packages.
+This is a template of a gotomate's package that you can use to create your own gotomate's package.
 
-You can choose to create your own functions to do whatever you want with a gotomate process.
+You can choose to create your own functions to do whatever you want with a gotomate's process.
 
 ## Installation
 
@@ -11,6 +11,7 @@ Download or Clone the repo:
 git pull https://github.com/pierrelh/gotomate-package-template.git
 ```
 or this link:
+
 https://production-gotomate.herokuapp.com/resources/gotomate-package-template.rar
 
 ## Setup
@@ -23,7 +24,7 @@ Then rename the "Package" folder to what your package should be named (don't for
 
 ## Installation of the package
 
-Currently, on Windows there is now known way (by me) to use plugin, so you have to add some lines to the gotomate's code in order
+Currently, on Windows there is no known way (by me) to use plugins, so you have to add some lines into gotomate's code in order
 to use your package.
 
 ### Step 1
