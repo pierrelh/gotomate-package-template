@@ -1,25 +1,40 @@
 /*
-The processing.go file is used to list all your functions in functions.go &
-to preprocess them by getting, if needed, the values for the function execution
+The processing.go file is used to list all your functions in functions.go & process them when called by the fiber.
+
+All you have to do is to list your functions with the associated databinder & template like this:
+case "A":
+	go func() {
+		nextID = A(instructionData, finished)
+	}()
+	<-finished
+case "B":
+	go func() {
+		nextID = B(instructionData, finished)
+	}()
+	<-finished
+...
+
+For better lisibility, list them in alphabetical order
 */
 
-package yourpackage
+package yourpackagename
 
 import (
 	"fmt"
 	"reflect"
 )
 
-// Processing process the functions from clipboard's package
-func Processing(funcName string, instructionData reflect.Value, finished chan bool) {
+// Processing the functions.go functions
+func Processing(funcName string, instructionData reflect.Value, finished chan bool) int {
+	nextID := -1
 	switch funcName {
-	// case "Define":
-	// 	// If you need to get values from the databinder then do this
-	// 	foo := instructionData.FieldByName("Foo").Interface().(string)
-	// 	bar := instructionData.FieldByName("Bar").Interface().(string)
-	// 	go YourFunction(foo, bar, finished)
-	// 	<-finished
+	case "YourFunction":
+		go func() {
+			// nextID = YourFunction(instructionData, finished)
+		}()
+		<-finished
 	default:
 		fmt.Println("FIBER ERROR: This function is not integrated yet: " + funcName)
 	}
+	return nextID
 }
