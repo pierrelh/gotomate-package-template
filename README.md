@@ -1,6 +1,6 @@
-# Gotomate Package Template
+# Gotomate-Walk Package Template
 
-This is a template of a Gotomate's package that you can use to create your own Gotomate's package.
+This is a template of a Gotomate-Walk's package that you can use to create your own Gotomate's package.
 
 You can choose to create your own functions to do whatever you want with a Gotomate's process.
 
@@ -12,11 +12,9 @@ git pull https://github.com/pierrelh/gotomate-package-template.git
 ```
 or this link:
 
-https://production-gotomate.herokuapp.com/resources/gotomate-package-template.rar
-
 ## Setup
 
-Fill the all the files in the Package folder with the right requirements. Fill free to use as an exemple the originals Gotomate's packages to help you building this.
+Fill the all the files in the Package folder with the right requirements. Fill free to use as an exemple the originals Gotomate-Walk's packages to help you building this.
 
 Edit the icon.png with an icon corresponding to your package for a better use by users. The size of the icon must be 32x32px. 
 
@@ -24,7 +22,7 @@ Then rename the "Package" folder to what your package should be named (don't for
 
 ## Installation of the package
 
-### Installation by Gotomate
+### Installation by Gotomate-Walk
 
 In Gotomate's action menu, select "Import package" then select your .zip archive & restart Gotomate. If the package was correctly
 builded then it should work !
