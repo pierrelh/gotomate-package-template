@@ -1,6 +1,6 @@
 # Gotomate-Walk Package Template
 
-This is a template of a Gotomate-Walk's package that you can use to create your own Gotomate's package.
+This is a template of a Gotomate-Walk's package that you can use to create your own Gotomate-Walk's package.
 
 You can choose to create your own functions to do whatever you want with a Gotomate's process.
 
@@ -8,9 +8,8 @@ You can choose to create your own functions to do whatever you want with a Gotom
 
 Download or Clone the repo:
 ```
-git pull https://github.com/pierrelh/gotomate-package-template.git
+git pull https://github.com/pierrelh/gotomate-walk-package-template.git
 ```
-or this link:
 
 ## Setup
 
